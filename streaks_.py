@@ -10,13 +10,17 @@ def upload():
     print('\n2). git add .')
     os.system('git add .')
 
-    file = input('\nEnter each file name seperated by space (or, Press ENTER to Upload All...) : ')
+    # file = input('\nEnter each file name seperated by space (or, Press ENTER to Upload All...) : ')
+    file = ''
     print('\n3). git commit -m "Adding files"')
     os.system('git commit '+ file +' -m "Adding files"')
 
     print('\n4). git remote add origin https://github.com/...')
-    username = input("Enter the github Username : ")
-    reponame = input('Enter Existing Repository : ')
+    # username = input("Enter the github Username : ")
+    username = 'imvickykumar999'
+
+    # reponame = input('Enter Existing Repository : ')
+    reponame = 'Auto-Git-Commit'
     os.system('git remote add origin https://github.com/'+username+'/'+reponame+'.git')
 
     print('\n5). git pull origin master')
