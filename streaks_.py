@@ -2,7 +2,6 @@
 # https://github.com/imvickykumar999/100th-Repository-Morsetor-python-Package/blob/main/PYPI%20python%20package/multivicks/github.py
 # https://github.com/imvickykumar999/Auto-Git-Commit/blob/master/streaks_.py
 
-import os
 
 def upload():
     print('\n1). git init')
@@ -28,11 +27,12 @@ def upload():
     os.system('git pull origin master')
 
     print('\n6). git push origin master')
-    return_force = os.system('git push --force origin main')
+    return_force = os.system('git push --force origin master')
 
     if not return_force:
         print('Uploaded Successfully')
     else:
         print("Sorry, Couldn't be uploaded... Try again !!!")
 
+import os
 upload()
