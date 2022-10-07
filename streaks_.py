@@ -28,7 +28,7 @@ def upload():
     os.system('git pull origin master')
 
     print('\n6). git push origin master')
-    return_force = os.system('git push --force origin master')
+    return_force = os.system('git push --force origin main')
 
     if not return_force:
         print('Uploaded Successfully')
